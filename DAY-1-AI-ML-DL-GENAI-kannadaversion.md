@@ -1,285 +1,289 @@
-# ITkannadigaru — AI, ML, Deep Learning ಮತ್ತು Generative AI
+# ITkannadigaru - AI, Machine Learning, Deep Learning, and Generative AI
 
-> ವಿದ್ಯಾರ್ಥಿಗಳಿಗಾಗಿ ಸರಳ Kannada + English technical notes  
-> **Learning path:** AI → Machine Learning → Deep Learning → Generative AI → LLM → RAG → AI Agents
+> English student notes  
+> **Learning path:** AI -> Machine Learning -> Deep Learning -> Generative AI -> LLMs -> RAG -> AI Agents
 
 ---
 
-## 1. Artificial Intelligence (AI) ಎಂದರೇನು?
+## 1. What Is Artificial Intelligence?
 
-**Artificial Intelligence (AI)** ಎಂದರೆ ಸಾಮಾನ್ಯವಾಗಿ human intelligence ಬೇಕಾಗುವ ಕೆಲಸಗಳನ್ನು machine ಮೂಲಕ ಮಾಡಿಸುವ technology.
+**Artificial Intelligence (AI)** is the technology that enables machines to perform tasks that normally require human intelligence.
 
-### ಉದಾಹರಣೆಗಳು
+### Examples
 
-- Google Maps — route prediction
-- Netflix — movie recommendation
-- Google Photos — face recognition
-- Banking — fraud detection
-- ChatGPT — language understanding and generation
-- Self-driving cars — object detection and decision-making
+- Google Maps - route prediction
+- Netflix - movie recommendations
+- Google Photos - face recognition
+- Banking systems - fraud detection
+- ChatGPT - language understanding and generation
+- Self-driving cars - object detection and decision-making
 
 ### Rule-Based AI
 
-Rules ಅನ್ನು developer ಮೊದಲೇ ಬರೆಯುತ್ತಾರೆ.
+In rule-based AI, developers manually define the rules.
 
 ```text
-IF transaction_amount > ₹1,00,000
+IF transaction_amount > INR 100,000
 AND country != user's_country
 AND transaction_time = 3 AM
-THEN mark as suspicious
+THEN mark the transaction as suspicious
 ```
 
-ಈ ವಿಧಾನ simple scenariosಗೆ ಉಪಯುಕ್ತ. ಆದರೆ real-worldನಲ್ಲಿ ಪ್ರತಿಯೊಂದು situationಗೂ rules ಬರೆಯುವುದು ಕಷ್ಟ.
+This approach works for simple situations. However, writing rules for every possible real-world situation is difficult.
 
 ---
 
-## 2. Machine Learning (ML) ಎಂದರೇನು?
+## 2. What Is Machine Learning?
 
-**Machine Learning** ಎಂದರೆ ಎಲ್ಲ rules ಅನ್ನು manually program ಮಾಡುವ ಬದಲು, data ನೀಡಿ ಅದರಲ್ಲಿರುವ patterns ಅನ್ನು machine ಕಲಿಯುವ ವಿಧಾನ.
+**Machine Learning (ML)** is an approach in which machines learn patterns from data instead of being explicitly programmed with every rule.
 
 ### Traditional Programming vs Machine Learning
 
 | Traditional Programming | Machine Learning |
 |---|---|
-| Rules + Data → Program → Output | Data + Expected Output → Algorithm → Model |
-| Rules ಅನ್ನು developer ಬರೆಯುತ್ತಾರೆ | Patterns ಅನ್ನು model ಕಲಿಯುತ್ತದೆ |
-| Fixed logicಗೆ ಸೂಕ್ತ | Complex patternsಗೆ ಸೂಕ್ತ |
+| Rules + Data -> Program -> Output | Data + Expected Output -> Algorithm -> Model |
+| Developers write the rules | The model learns patterns from data |
+| Suitable for fixed logic | Suitable for complex patterns |
 
-Training ಆದ ನಂತರ:
+After training:
 
 ```text
-New Data → Trained Model → Prediction
+New Data -> Trained Model -> Prediction
 ```
 
-### ಮುಖ್ಯ ವ್ಯತ್ಯಾಸ
+### Algorithm vs Model
 
-- **Algorithm:** Dataಯಿಂದ pattern ಕಲಿಯಲು ಬಳಸುವ mathematical procedure.
-- **Model:** Training ನಂತರ algorithm ಕಲಿತ parameters ಮತ್ತು relationships.
+- **Algorithm:** A mathematical procedure used to learn patterns from data.
+- **Model:** The trained result containing the relationships and parameters learned by the algorithm.
 
 ---
 
-## 3. AI, ML, Deep Learning ಮತ್ತು GenAI ನಡುವಿನ ಸಂಬಂಧ
+## 3. Relationship Between AI, ML, Deep Learning, and GenAI
 
 ```text
 Artificial Intelligence
-├── Rule-Based AI
-└── Machine Learning
-    ├── Classical Machine Learning
-    └── Deep Learning
-        ├── CNN
-        ├── RNN/LSTM
-        └── Transformers
+|-- Rule-Based AI
+`-- Machine Learning
+    |-- Classical Machine Learning
+    `-- Deep Learning
+        |-- CNN
+        |-- RNN/LSTM
+        `-- Transformers
 ```
 
-Modern **Generative AI** systems ಹೆಚ್ಚಾಗಿ Deep Learning architectures, ವಿಶೇಷವಾಗಿ Transformers, ಬಳಸುತ್ತವೆ.
+Most modern **Generative AI** systems use deep learning architectures, especially Transformers.
 
-### ನೆನಪಿಡಿ
+### Remember
 
-- AI ಒಂದು ದೊಡ್ಡ umbrella.
-- ML ಎಂಬುದು AI ನಿರ್ಮಿಸುವ ಒಂದು approach.
-- Deep Learning ಎಂಬುದು MLನ ಒಂದು subset.
-- Generative AI ಹೊಸ content generate ಮಾಡುತ್ತದೆ.
+- AI is the broad umbrella.
+- ML is one approach used to build AI systems.
+- Deep Learning is a subset of ML.
+- Generative AI creates new content from learned patterns.
 
 ---
 
-## 4. Data ಎಂದರೇನು?
+## 4. What Is Data?
 
-Data ಯಾವುದೇ AI/ML systemನ foundation.
+Data is the foundation of every AI and ML system.
 
 ```text
-Data → Preparation → Training → Model → Prediction
+Data -> Preparation -> Training -> Model -> Prediction
 ```
 
 ### Structured Data
 
-Rows ಮತ್ತು columns ರೂಪದಲ್ಲಿರುವ data.
+Structured data is organized into rows and columns.
 
 | ID | Name | Age | Salary |
 |---:|---|---:|---:|
-| 1 | Raj | 25 | ₹50,000 |
-| 2 | Ravi | 30 | ₹70,000 |
+| 1 | Raj | 25 | INR 50,000 |
+| 2 | Ravi | 30 | INR 70,000 |
 
-**Sources:** MySQL, PostgreSQL, CSV, Excel ಮತ್ತು data warehouses.
+Common sources include MySQL, PostgreSQL, CSV files, Excel files, and data warehouses.
 
 ### Unstructured Data
 
-Fixed table format ಇಲ್ಲದ data.
+Unstructured data does not follow a fixed table format.
 
-- PDF ಮತ್ತು documents
+- PDF files and documents
 - Images
 - Audio
 - Video
 - Emails
 - Free-form text
 
-Models unstructured dataಯನ್ನು process ಮಾಡಲು numerical representationಗೆ convert ಮಾಡುತ್ತವೆ.
+Models usually convert unstructured data into numerical representations.
 
 ```text
-Text → Tokenizer → Tokens → Embeddings → Model
+Text -> Tokenizer -> Tokens -> Embeddings -> Model
 ```
 
 ---
 
-## 5. ML Training ಹೇಗೆ ನಡೆಯುತ್ತದೆ?
+## 5. How Does ML Training Work?
 
-House price prediction ಉದಾಹರಣೆ:
+Consider a house-price prediction dataset:
 
 | Area | Bedrooms | Location | Price |
 |---:|---:|---|---:|
-| 1000 sq ft | 2 | Bengaluru | ₹50L |
-| 1500 sq ft | 3 | Bengaluru | ₹80L |
-| 2000 sq ft | 3 | Bengaluru | ₹1Cr |
+| 1,000 sq ft | 2 | Bengaluru | INR 50 lakh |
+| 1,500 sq ft | 3 | Bengaluru | INR 80 lakh |
+| 2,000 sq ft | 3 | Bengaluru | INR 1 crore |
 
-Training ಸಮಯದಲ್ಲಿ model input ಮತ್ತು output ನಡುವಿನ relationship ಕಲಿಯುತ್ತದೆ.
+During training, the model learns relationships between the inputs and the output.
 
 ```text
 Historical House Data
-        ↓
+        |
+        v
    ML Algorithm
-        ↓
+        |
+        v
       Training
-        ↓
+        |
+        v
    Trained Model
-        ↓
-New House Details → Predicted Price
+        |
+        v
+New House Details -> Predicted Price
 ```
 
 ### Training Steps
 
-1. **Collect Data** — problemಗೆ ಸಂಬಂಧಿಸಿದ data ಸಂಗ್ರಹಿಸುವುದು.
-2. **Clean Data** — null values, duplicates, wrong values, outliers ಮತ್ತು inconsistent formats ಸರಿಪಡಿಸುವುದು.
-3. **Select/Create Features** — modelಗೆ ಉಪಯುಕ್ತ inputs ಸಿದ್ಧಪಡಿಸುವುದು.
-4. **Split Data** — training, validation ಮತ್ತು testing sets ಮಾಡುವುದು.
-5. **Train Model** — algorithm ಮೂಲಕ patterns ಕಲಿಸುವುದು.
-6. **Evaluate Model** — unseen data ಮೇಲೆ performance ಪರೀಕ್ಷಿಸುವುದು.
-7. **Deploy and Monitor** — model ಅನ್ನು productionನಲ್ಲಿ ಬಳಸುವುದು ಮತ್ತು ಗಮನಿಸುವುದು.
+1. **Collect data** - Gather data relevant to the problem.
+2. **Clean data** - Handle null values, duplicates, invalid values, outliers, and inconsistent formats.
+3. **Create or select features** - Prepare useful inputs for the model.
+4. **Split the data** - Create training, validation, and test datasets.
+5. **Train the model** - Use an algorithm to learn patterns.
+6. **Evaluate the model** - Measure performance on unseen data.
+7. **Deploy and monitor** - Use the model in production and track its behavior.
 
 ---
 
-## 6. Features ಮತ್ತು Label/Target
+## 6. Features and Labels
 
-**Features** ಎಂದರೆ modelಗೆ input ಆಗಿ ಕೊಡುವ variables.  
-**Label/Target** ಎಂದರೆ model predict ಮಾಡಬೇಕಾದ output.
+**Features** are the input variables given to a model.  
+The **label** or **target** is the output that the model must predict.
 
-| Feature ಅಥವಾ Target | Example |
+| Type | Example |
 |---|---|
 | Feature | Area |
-| Feature | Bedrooms |
+| Feature | Number of bedrooms |
 | Feature | Location |
-| Target | House Price |
+| Target | House price |
 
 ```text
-Area ─────────┐
-Bedrooms ─────┼──→ Model ──→ Price
-Location ─────┘
+Area ---------\
+Bedrooms ------> Model -> Price
+Location -----/
 ```
 
 ---
 
-## 7. Train, Validation ಮತ್ತು Test Data
+## 7. Training, Validation, and Test Data
 
-Modelಗೆ ಎಲ್ಲ dataಯನ್ನೂ trainingಗೆ ಕೊಡಬಾರದು.
+We should not use all available data for training.
 
-ಒಂದು ಸಾಮಾನ್ಯ split:
+A common split is:
 
 | Dataset | Example Split | Purpose |
 |---|---:|---|
-| Training Data | 80% | Model patterns ಕಲಿಯಲು |
-| Validation Data | 10% | Hyperparameters ಮತ್ತು model choices tune ಮಾಡಲು |
-| Test Data | 10% | Final model ಅನ್ನು unseen data ಮೇಲೆ evaluate ಮಾಡಲು |
+| Training data | 80% | Used by the model to learn patterns |
+| Validation data | 10% | Used to tune hyperparameters and model choices |
+| Test data | 10% | Used for final evaluation on unseen data |
 
-> Split percentage problem ಮತ್ತು dataset sizeಗೆ ಅನುಗುಣವಾಗಿ ಬದಲಾಗಬಹುದು.
+The exact percentages can change depending on the problem and dataset size.
 
 ---
 
-## 8. Machine Learningನ ಮುಖ್ಯ ವಿಧಗಳು
+## 8. Main Types of Machine Learning
 
 ### Supervised Learning
 
-Input ಜೊತೆಗೆ correct output/label ಇರುತ್ತದೆ. ಇದು **teacher ಇರುವ learning** ತರಹ.
+The training data contains inputs and their correct outputs. It is similar to learning with a teacher.
 
 ```text
-Input + Correct Answer → Training → Prediction
+Input + Correct Answer -> Training -> Prediction
 ```
 
-ಉದಾಹರಣೆ: Email → Spam / Not Spam
+Example: Email -> Spam or Not Spam
 
 ### Unsupervised Learning
 
-Labels ಇರುವುದಿಲ್ಲ. Model dataಯಲ್ಲಿನ groups ಅಥವಾ patterns ಹುಡುಕುತ್ತದೆ. ಇದು **teacher ಇಲ್ಲದ learning** ತರಹ.
+The data has no labels. The model searches for groups, structures, or patterns.
 
-ಉದಾಹರಣೆ: Customers → Similar customer groups
+Example: Customers -> Groups of similar customers
 
 ### Reinforcement Learning
 
-Agent environmentನಲ್ಲಿ actions ತೆಗೆದುಕೊಂಡು reward ಅಥವಾ penalty ಮೂಲಕ ಕಲಿಯುತ್ತದೆ.
+An agent learns by taking actions in an environment and receiving rewards or penalties.
 
 ```text
-Agent → Action → Environment → Reward/Penalty → Learning
+Agent -> Action -> Environment -> Reward/Penalty -> Learning
 ```
 
-**Uses:** Robotics, games, control systems ಮತ್ತು optimization.
+Common uses include robotics, game playing, control systems, and optimization.
 
-### ಇತರೆ ವಿಧಗಳು
+### Other Learning Types
 
-- **Semi-Supervised Learning:** ಸ್ವಲ್ಪ labeled data + ಹೆಚ್ಚು unlabeled data.
-- **Self-Supervised Learning:** Dataಯಿಂದಲೇ training signal ಸೃಷ್ಟಿಸುವುದು; LLM pretrainingನಲ್ಲಿ ಸಾಮಾನ್ಯ.
+- **Semi-Supervised Learning:** Uses a small amount of labeled data and a larger amount of unlabeled data.
+- **Self-Supervised Learning:** Creates a training signal from the data itself. It is widely used in LLM pretraining.
 
 ---
 
 ## 9. Regression
 
-**Regression** continuous numerical value predict ಮಾಡುತ್ತದೆ.
+**Regression** predicts a continuous numerical value.
 
-### ಉದಾಹರಣೆಗಳು
+### Examples
 
-- House → ₹90 Lakhs
-- Employee → ₹15 Lakhs salary
-- Temperature → 32.5°C
-- Monthly sales → ₹5,20,000
+- House -> INR 90 lakh
+- Employee -> INR 15 lakh annual salary
+- Temperature -> 32.5 degrees Celsius
+- Monthly sales -> INR 520,000
 
 ### Simple Linear Regression
 
-Data pointsಗೆ ಹೊಂದುವ best-fit line ಹುಡುಕುವುದು basic idea.
+The basic idea is to find a best-fit line that represents the overall pattern in the data.
 
 ```text
 Price
-  │             ●
-  │         ●
-  │      ●
-  │   ●
-  │ ●
-  └──────────────── Area
+  |             *
+  |         *
+  |      *
+  |   *
+  | *
+  +---------------- Area
 ```
 
 Formula:
 
 ```text
-ŷ = b₀ + b₁x
+y_hat = b0 + b1*x
 ```
 
-- `ŷ` — predicted value
-- `x` — input feature
-- `b₀` — intercept
-- `b₁` — slope
+- `y_hat` - predicted value
+- `x` - input feature
+- `b0` - intercept
+- `b1` - slope
 
 ---
 
 ## 10. Classification
 
-**Classification** ಒಂದು category/class predict ಮಾಡುತ್ತದೆ.
+**Classification** predicts a category or class.
 
-### ಉದಾಹರಣೆಗಳು
+### Examples
 
-- Email → Spam / Not Spam
-- Transaction → Fraud / Genuine
-- Customer → Churn / No Churn
-- Image → Cat / Dog
+- Email -> Spam or Not Spam
+- Transaction -> Fraud or Genuine
+- Customer -> Churn or No Churn
+- Image -> Cat or Dog
 
-### Types
+### Types of Classification
 
-- **Binary Classification:** ಎರಡು classes, ಉದಾ. Yes/No.
-- **Multiclass Classification:** ಎರಡುಗಿಂತ ಹೆಚ್ಚು classes, ಉದಾ. Cat/Dog/Horse/Bird.
+- **Binary Classification:** Predicts one of two classes, such as Yes or No.
+- **Multiclass Classification:** Predicts one of several classes, such as Cat, Dog, Horse, or Bird.
 
 ### Common Algorithms
 
@@ -289,278 +293,302 @@ Formula:
 - Support Vector Machine (SVM)
 - K-Nearest Neighbors (KNN)
 
-> ಹೆಸರಿನಲ್ಲಿ “Regression” ಇದ್ದರೂ Logistic Regression ಸಾಮಾನ್ಯವಾಗಿ classificationಗೆ ಬಳಸಲಾಗುತ್ತದೆ.
+Although its name contains the word "Regression," Logistic Regression is commonly used for classification.
 
 ---
 
-## 11. Clustering ಮತ್ತು Unsupervised Learning
+## 11. Clustering and Unsupervised Learning
 
-**Clustering** similar data points ಅನ್ನು groups ಆಗಿ ವಿಂಗಡಿಸುತ್ತದೆ.
+**Clustering** groups similar data points without using predefined labels.
 
 ```text
 Customer Data
-     ↓
+     |
+     v
 Clustering Algorithm
-     ↓
-Premium | Discount-focused | Occasional
+     |
+     v
+Premium | Discount-Focused | Occasional
 ```
 
-Popular algorithm: **K-Means Clustering**
+A popular clustering algorithm is **K-Means**.
 
-**Uses:** Customer segmentation, anomaly discovery ಮತ್ತು market analysis.
+Common uses include customer segmentation, anomaly discovery, and market analysis.
 
 ---
 
 ## 12. Deep Learning
 
-**Deep Learning** ಎಂಬುದು multiple layers ಇರುವ neural networks ಬಳಸುವ Machine Learningನ ಒಂದು branch.
+**Deep Learning** is a branch of Machine Learning that uses neural networks with multiple layers.
 
-Classical MLನಲ್ಲಿ feature engineering ಹೆಚ್ಚು manual ಆಗಿರಬಹುದು. Deep Learning ದೊಡ್ಡ datasetಗಳಿಂದ useful representations ಅನ್ನು automatically ಕಲಿಯಬಲ್ಲದು.
+Classical ML may depend heavily on manually designed features. Deep Learning can learn useful representations directly from large datasets.
 
 ```text
-Input Layer → Hidden Layers → Output Layer
+Input Layer -> Hidden Layers -> Output Layer
 ```
 
-### Neural Network Terms
+### Important Neural Network Terms
 
-- **Weight:** Inputನ importance ಅನ್ನು ಸೂಚಿಸುವ learned value.
-- **Bias:** Model output adjust ಮಾಡಲು ಬಳಸುವ learned value.
-- **Activation Function:** Network complex/non-linear patterns ಕಲಿಯಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ.
-- **Loss Function:** Prediction ಎಷ್ಟು ತಪ್ಪಾಗಿದೆ ಎಂದು measure ಮಾಡುತ್ತದೆ.
-- **Gradient Descent:** Loss ಕಡಿಮೆ ಮಾಡಲು parameters update ಮಾಡುವ optimization method.
-- **Backpropagation:** Error information ಅನ್ನು networkನಲ್ಲಿ ಹಿಂದಕ್ಕೆ ಸಾಗಿಸಿ weights update ಮಾಡಲು ಬಳಸುವ process.
-- **Epoch:** ಸಂಪೂರ್ಣ training dataset ಅನ್ನು model ಒಮ್ಮೆ process ಮಾಡುವುದು.
+- **Weight:** A learned value representing the importance of an input.
+- **Bias:** A learned value that adjusts a neuron's output.
+- **Activation Function:** Helps the network learn complex, non-linear patterns.
+- **Loss Function:** Measures how incorrect a prediction is.
+- **Gradient Descent:** An optimization method used to reduce loss.
+- **Backpropagation:** Sends error information backward through the network to update weights.
+- **Epoch:** One complete pass through the training dataset.
 
 ---
 
-## 13. Neural Network ಹೇಗೆ ಕಲಿಯುತ್ತದೆ?
+## 13. How Does a Neural Network Learn?
 
 ```text
 Input
-  ↓
+  |
+  v
 Prediction
-  ↓
+  |
+  v
 Compare with Actual Value
-  ↓
+  |
+  v
 Calculate Loss
-  ↓
+  |
+  v
 Backpropagation
-  ↓
+  |
+  v
 Update Weights
-  ↓
+  |
+  v
 Repeat
 ```
 
-ಉದಾಹರಣೆ:
+Example:
 
 ```text
-Actual Price     = ₹100L
-Model Prediction = ₹70L
+Actual Price     = INR 100 lakh
+Model Prediction = INR 70 lakh
 ```
 
-ಈ difference ಆಧರಿಸಿ loss calculate ಮಾಡಿ weights adjust ಮಾಡಲಾಗುತ್ತದೆ.
+The system calculates the error and adjusts its weights to improve future predictions.
 
 ---
 
-## 14. Overfitting ಮತ್ತು Underfitting
+## 14. Overfitting and Underfitting
 
 ### Overfitting
 
-Model training dataಯನ್ನು ತುಂಬಾ ಚೆನ್ನಾಗಿ ಕಲಿತು, unseen data ಮೇಲೆ poor performance ಕೊಡುವುದು.
+Overfitting occurs when a model performs very well on training data but poorly on unseen data.
 
 ```text
-Training Data → Excellent
-New Data      → Poor
+Training Data -> Excellent
+New Data      -> Poor
 ```
 
-ಇದು textbook answers memorize ಮಾಡಿದ student ಹೊಸ ಪ್ರಶ್ನೆಗೆ ಉತ್ತರ ಕೊಡಲಾರದಂತಿದೆ.
+It is similar to a student memorizing textbook answers but failing to answer new questions.
 
 ### Underfitting
 
-Model training dataಯಲ್ಲಿನ basic pattern ಕೂಡ ಸರಿಯಾಗಿ ಕಲಿಯದಿರುವುದು.
+Underfitting occurs when a model fails to learn even the basic patterns in the training data.
 
 ```text
-Training Data → Poor
-New Data      → Poor
+Training Data -> Poor
+New Data      -> Poor
 ```
 
-ಒಳ್ಳೆಯ model training data ಮೇಲೆ ಮಾತ್ರವಲ್ಲ, unseen data ಮೇಲೂ ಉತ್ತಮವಾಗಿ **generalize** ಮಾಡಬೇಕು.
+A good model should perform well on training data and **generalize** to unseen data.
 
 ---
 
-## 15. CNN, RNN/LSTM ಮತ್ತು Transformers
+## 15. CNN, RNN/LSTM, and Transformers
 
-| Architecture | ಮುಖ್ಯ ಬಳಕೆ |
+| Architecture | Main Use |
 |---|---|
-| CNN | Images ಮತ್ತು computer vision |
-| RNN/LSTM | Sequential data, time series, text ಮತ್ತು speech |
-| Transformer | Modern NLP, LLMs ಮತ್ತು multimodal AI |
+| CNN | Images and computer vision |
+| RNN/LSTM | Sequential data, time series, text, and speech |
+| Transformer | Modern NLP, LLMs, and multimodal AI |
 
 ### CNN Example
 
 ```text
-X-Ray → CNN → Edges → Shapes → Patterns → Disease Prediction
+X-Ray -> CNN -> Edges -> Shapes -> Patterns -> Disease Prediction
 ```
 
-### Transformer ಮತ್ತು Attention
+### Transformers and Attention
 
-Sentence:
+Consider this sentence:
 
-> “I deposited money in the bank.”
+> "I deposited money in the bank."
 
-ಇಲ್ಲಿ `bank` ಎಂಬ ಪದದ meaning surrounding words ನೋಡಿ ತಿಳಿಯುತ್ತದೆ. **Attention** mechanism tokens ನಡುವಿನ relevant relationships ಗುರುತಿಸಲು modelಗೆ ಸಹಾಯ ಮಾಡುತ್ತದೆ.
+The meaning of `bank` becomes clear from the surrounding words. The **attention** mechanism helps a model identify relevant relationships between tokens.
 
 ```text
-Input → Tokenization → Embeddings → Transformer → Contextual Representation
+Input -> Tokenization -> Embeddings -> Transformer -> Contextual Representation
 ```
 
 ---
 
-## 16. Generative AI ಎಂದರೇನು?
+## 16. What Is Generative AI?
 
-Traditional ML ಸಾಮಾನ್ಯವಾಗಿ value ಅಥವಾ category **predict** ಮಾಡುತ್ತದೆ.  
-Generative AI ಕಲಿತ patterns ಆಧರಿಸಿ ಹೊಸ content **generate** ಮಾಡುತ್ತದೆ.
+Traditional ML usually predicts a value or category. Generative AI creates new content based on learned patterns.
 
 ### Examples
 
-- Text → Text
-- Text → Image
-- Text → Code
-- Text → Audio
-- Text → Video
-- Text + Image + Audio → Multimodal response
+- Text -> Text
+- Text -> Image
+- Text -> Code
+- Text -> Audio
+- Text -> Video
+- Text + Image + Audio -> Multimodal response
 
-Generative AI ಎಂದರೆ LLM ಮಾತ್ರವಲ್ಲ. Image generationಗೆ diffusion models ಸೇರಿದಂತೆ ಬೇರೆ architectures ಕೂಡ ಬಳಕೆಯಾಗುತ್ತವೆ.
+Generative AI is not limited to LLMs. For example, many image-generation systems use diffusion models.
 
 ---
 
-## 17. Large Language Model (LLM)
+## 17. What Is a Large Language Model?
 
-**LLM = Large Language Model**
+**LLM** stands for **Large Language Model**.
 
-LLM ದೊಡ್ಡ ಪ್ರಮಾಣದ text/code data ಮೇಲೆ train ಆಗಿರುತ್ತದೆ. Simplified viewನಲ್ಲಿ ಅದರ ಪ್ರಮುಖ training tasksಗಳಲ್ಲಿ ಒಂದು **next-token prediction**.
+An LLM is trained on a very large amount of text and code. At a simplified level, one of its main training tasks is **next-token prediction**.
 
 ```text
-"The capital of India is" → Delhi
+"The capital of India is" -> Delhi
 ```
 
 ### LLM Processing Flow
 
 ```text
 Text
-  ↓
+  |
+  v
 Tokenization
-  ↓
+  |
+  v
 Tokens
-  ↓
+  |
+  v
 Embeddings
-  ↓
+  |
+  v
 Transformer
-  ↓
+  |
+  v
 Next-Token Probabilities
-  ↓
+  |
+  v
 Generated Response
 ```
 
-- **Token:** Model process ಮಾಡುವ textನ ಒಂದು unit; ಇದು full word, subword ಅಥವಾ punctuation ಆಗಿರಬಹುದು.
-- **Embedding:** Tokenನ meaning ಮತ್ತು relationships represent ಮಾಡುವ numerical vector.
-- **Context Window:** Model ಒಂದೇ ಸಮಯದಲ್ಲಿ process ಮಾಡಬಹುದಾದ tokensನ ಮಿತಿ.
+- **Token:** A unit of text processed by a model. It may be a word, part of a word, or punctuation.
+- **Embedding:** A numerical vector representing a token's meaning and relationships.
+- **Context Window:** The maximum number of tokens a model can process together.
 
-> LLM generated answer ಯಾವಾಗಲೂ factual ಆಗಿರುತ್ತದೆ ಎಂಬ guarantee ಇಲ್ಲ. Important information verify ಮಾಡಬೇಕು.
+An LLM can produce incorrect information. Important answers should always be verified.
 
 ---
 
-## 18. Pretraining ಮತ್ತು Fine-Tuning
+## 18. Pretraining and Fine-Tuning
 
 ### Pretraining
 
-Massive general-purpose dataset ಮೇಲೆ model ಅನ್ನು train ಮಾಡಿ base/foundation model ನಿರ್ಮಿಸುವುದು.
+Pretraining creates a base or foundation model by training it on a massive general-purpose dataset.
 
 ```text
-Large Text + Code Dataset → Training → Base Model
+Large Text and Code Dataset -> Training -> Base Model
 ```
 
 ### Fine-Tuning
 
-Base model ಅನ್ನು specific task ಅಥವಾ domain data ಮೇಲೆ ಇನ್ನಷ್ಟು train ಮಾಡುವುದು.
+Fine-tuning trains a base model further using data for a specific task or domain.
 
 ```text
-Base Model + Domain Data → Fine-Tuned Model
+Base Model + Domain Data -> Fine-Tuned Model
 ```
 
-ಉದಾಹರಣೆ: General model + medical data → medical-focused model.
+Example: General model + medical data -> Medical-focused model
 
 ---
 
-## 19. Retrieval-Augmented Generation (RAG)
+## 19. Retrieval-Augmented Generation
 
-**RAG = Retrieval-Augmented Generation**
+**RAG** stands for **Retrieval-Augmented Generation**.
 
-LLMಗೆ private, company-specific ಅಥವಾ latest information ಗೊತ್ತಿರದೇ ಇರಬಹುದು. RAG ಮೊದಲು relevant documents retrieve ಮಾಡಿ, ಅವುಗಳನ್ನು context ಆಗಿ LLMಗೆ ಕೊಡುತ್ತದೆ.
+An LLM may not know private, company-specific, or recently updated information. RAG retrieves relevant documents and provides them to the LLM as context.
 
 ```text
 User Question
-      ↓
+      |
+      v
 Question Embedding
-      ↓
+      |
+      v
 Vector Search
-      ↓
+      |
+      v
 Relevant Documents
-      ↓
+      |
+      v
 Question + Retrieved Context
-      ↓
+      |
+      v
 LLM
-      ↓
+      |
+      v
 Answer
 ```
 
 ### Example
 
-Question: “ನಮ್ಮ company leave policy ಏನು?”
+Question: "What is our company's leave policy?"
 
-Company documents ಅನ್ನು vector databaseನಲ್ಲಿ search ಮಾಡಿ relevant policy retrieve ಮಾಡಿದ ನಂತರ LLM answer generate ಮಾಡುತ್ತದೆ.
+The system searches company documents in a vector database, retrieves the relevant policy, and gives that context to the LLM.
 
-### ಮುಖ್ಯ ಅಂಶ
+### Important Point
 
-RAG ಹೊಸ ML category ಅಲ್ಲ. ಇದು LLM ಸುತ್ತ ನಿರ್ಮಿಸುವ **application architecture**.
+RAG is not a new category of Machine Learning. It is an **application architecture** built around an LLM.
 
 ---
 
-## 20. AI Agent ಎಂದರೇನು?
+## 20. What Is an AI Agent?
 
-LLM ಸಾಮಾನ್ಯವಾಗಿ response generate ಮಾಡುತ್ತದೆ. **AI Agent** model ಜೊತೆಗೆ tools/APIs ಬಳಸಿ actions execute ಮಾಡಬಲ್ಲ system.
+An LLM mainly generates responses. An **AI Agent** combines a model with tools or APIs so that it can perform actions.
 
 ```text
 User Request
-    ↓
+    |
+    v
 LLM Understands Intent
-    ↓
+    |
+    v
 Select Tool
-    ↓
+    |
+    v
 Call API
-    ↓
+    |
+    v
 Observe Result
-    ↓
+    |
+    v
 Continue or Return Final Answer
 ```
 
 Example request:
 
-> “ನನ್ನ last order ಹುಡುಕಿ cancel ಮಾಡು.”
+> "Find my latest order and cancel it."
 
 Possible agent flow:
 
 ```text
-Find Order API → Get Last Order → Cancellation API → Confirm Result
+Find Order API -> Get Latest Order -> Cancellation API -> Confirm Result
 ```
 
-### LLM vs RAG vs Agent
+### LLM vs RAG vs AI Agent
 
-| System | ಮುಖ್ಯ ಕೆಲಸ |
+| System | Main Purpose |
 |---|---|
-| LLM | Learned knowledge ಆಧರಿಸಿ content generate ಮಾಡುವುದು |
-| RAG | External documents retrieve ಮಾಡಿ grounded answer generate ಮಾಡುವುದು |
-| AI Agent | Reasoning loopನಲ್ಲಿ tools/APIs ಬಳಸಿ task execute ಮಾಡುವುದು |
+| LLM | Generates content from learned knowledge |
+| RAG | Retrieves external documents to generate a grounded answer |
+| AI Agent | Uses tools and APIs in a reasoning loop to complete a task |
 
 ---
 
@@ -570,19 +598,26 @@ Find Order API → Get Last Order → Cancellation API → Confirm Result
 
 ```text
 Data
-  ↓
+  |
+  v
 Data Preparation
-  ↓
+  |
+  v
 Feature Engineering
-  ↓
+  |
+  v
 Algorithm and Training
-  ↓
+  |
+  v
 Model Evaluation
-  ↓
+  |
+  v
 Deployment
-  ↓
+  |
+  v
 Prediction
-  ↓
+  |
+  v
 Monitoring
 ```
 
@@ -590,107 +625,113 @@ Monitoring
 
 ```text
 User Input
-   ↓
+   |
+   v
 Prompt / Retrieval / Tools
-   ↓
+   |
+   v
 Foundation Model
-   ↓
+   |
+   v
 Application Logic
-   ↓
+   |
+   v
 API / Agent
-   ↓
+   |
+   v
 Production
-   ↓
+   |
+   v
 Evaluation and Monitoring
 ```
 
-AI Engineerಗೆ model knowledge ಜೊತೆಗೆ APIs, Docker, Kubernetes, CI/CD, security, evaluation, observability ಮತ್ತು production monitoring ಕೂಡ ಮುಖ್ಯ.
+An AI Engineer needs model knowledge as well as skills in APIs, Docker, Kubernetes, CI/CD, security, evaluation, observability, and production monitoring.
 
 ---
 
-## 22. E-Commerceನಲ್ಲಿ Conceptsನ ಬಳಕೆ
+## 22. E-Commerce Examples
 
 | Problem | Suitable Approach |
 |---|---|
-| Sales amount predict ಮಾಡುವುದು | Regression |
-| Transaction fraud/genuine ಗುರುತಿಸುವುದು | Classification |
-| Similar customers group ಮಾಡುವುದು | Clustering |
-| Product image category ಗುರುತಿಸುವುದು | CNN/Vision model |
-| Customer questionಗೆ response ಕೊಡುವುದು | LLM |
-| Company documents ಆಧರಿಸಿ answer ಕೊಡುವುದು | RAG |
-| Order ಹುಡುಕಿ cancel ಮಾಡುವುದು | AI Agent + APIs |
+| Predict sales amount | Regression |
+| Identify fraud or genuine transactions | Classification |
+| Group similar customers | Clustering |
+| Identify product-image categories | CNN or vision model |
+| Answer a customer question | LLM |
+| Answer using company documents | RAG |
+| Find and cancel an order | AI Agent with APIs |
 
 ---
 
-## 23. Quick Revision
+## 23. Quick Revision Questions and Answers
 
-1. **AI ಎಂದರೇನು?**  
-   Human intelligence ಬೇಕಾಗುವ tasks ಅನ್ನು machines ಮೂಲಕ perform ಮಾಡಿಸುವ technology.
+1. **What is AI?**  
+   AI enables machines to perform tasks that normally require human intelligence.
 
-2. **ML ಎಂದರೇನು?**  
-   Explicit rules ಬದಲು dataಯಿಂದ patterns ಕಲಿಯುವ AI approach.
+2. **What is ML?**  
+   ML is an AI approach in which machines learn patterns from data instead of following only manually written rules.
 
-3. **Algorithm ಮತ್ತು Model ನಡುವಿನ ವ್ಯತ್ಯಾಸವೇನು?**  
-   Algorithm learning procedure; model ಅದರ training output.
+3. **What is the difference between an algorithm and a model?**  
+   An algorithm is the learning procedure; a model is the trained output of that procedure.
 
-4. **Feature ಎಂದರೇನು?**  
-   Modelಗೆ ನೀಡುವ input variable.
+4. **What is a feature?**  
+   A feature is an input variable given to a model.
 
-5. **Label/Target ಎಂದರೇನು?**  
-   Model predict ಮಾಡಬೇಕಾದ output.
+5. **What is a label or target?**  
+   It is the output that the model must predict.
 
-6. **Regression ಯಾವಾಗ ಬಳಸಬೇಕು?**  
-   Continuous number predict ಮಾಡಬೇಕಾದಾಗ.
+6. **When is regression used?**  
+   Regression is used to predict a continuous numerical value.
 
-7. **Classification ಯಾವಾಗ ಬಳಸಬೇಕು?**  
-   Category/class predict ಮಾಡಬೇಕಾದಾಗ.
+7. **When is classification used?**  
+   Classification is used to predict a category or class.
 
-8. **Clustering ಎಂದರೇನು?**  
-   Labels ಇಲ್ಲದೆ similar data points ಅನ್ನು groups ಮಾಡುವುದು.
+8. **What is clustering?**  
+   Clustering groups similar data points without predefined labels.
 
-9. **Epoch ಎಂದರೇನು?**  
-   Entire training dataset ಮೇಲೆ ಒಂದು complete training pass.
+9. **What is an epoch?**  
+   An epoch is one complete pass through the training dataset.
 
-10. **Overfitting ಎಂದರೇನು?**  
-    Training data ಮೇಲೆ good, unseen data ಮೇಲೆ poor performance.
+10. **What is overfitting?**  
+    It occurs when a model performs well on training data but poorly on unseen data.
 
-11. **Transformerನ key idea ಯಾವುದು?**  
-    Attention ಮೂಲಕ tokens ನಡುವಿನ contextual relationships ಕಲಿಯುವುದು.
+11. **What is the key idea behind Transformers?**  
+    Transformers use attention to learn contextual relationships between tokens.
 
-12. **LLM ಹೇಗೆ text generate ಮಾಡುತ್ತದೆ?**  
-    Context ಆಧರಿಸಿ tokens ಅನ್ನು ಕ್ರಮವಾಗಿ predict ಮಾಡುತ್ತದೆ.
+12. **How does an LLM generate text?**  
+    It predicts tokens sequentially based on the available context.
 
-13. **Fine-tuning ಎಂದರೇನು?**  
-    Base model ಅನ್ನು specific task/domain data ಮೇಲೆ further train ಮಾಡುವುದು.
+13. **What is fine-tuning?**  
+    Fine-tuning trains a base model further for a specific task or domain.
 
-14. **RAG ಯಾಕೆ ಬೇಕು?**  
-    External/private/latest documents retrieve ಮಾಡಿ grounded answer ಕೊಡಲು.
+14. **Why is RAG used?**  
+    RAG retrieves external, private, or current information to produce a more grounded answer.
 
-15. **LLM ಮತ್ತು Agent ನಡುವಿನ ವ್ಯತ್ಯಾಸವೇನು?**  
-    LLM response generate ಮಾಡುತ್ತದೆ; agent tools/APIs ಬಳಸಿ actions execute ಮಾಡುತ್ತದೆ.
+15. **What is the difference between an LLM and an AI Agent?**  
+    An LLM generates responses, while an agent can use tools and APIs to perform actions.
 
 ---
 
 ## 24. One-Line Summary
 
-> **Machine Learning dataಯಿಂದ patterns ಕಲಿಯುತ್ತದೆ; Deep Learning neural networks ಮೂಲಕ complex representations ಕಲಿಯುತ್ತದೆ; Generative AI ಕಲಿತ representations ಬಳಸಿ ಹೊಸ content generate ಮಾಡುತ್ತದೆ; RAG external knowledge ಸೇರಿಸುತ್ತದೆ; AI Agents tools ಬಳಸಿ tasks execute ಮಾಡುತ್ತವೆ.**
+> **Machine Learning learns patterns from data; Deep Learning learns complex representations through neural networks; Generative AI uses learned representations to create new content; RAG adds external knowledge; and AI Agents use tools to complete tasks.**
 
 ---
 
 ## 25. Recommended Learning Order
 
 1. AI vs ML vs Deep Learning vs Generative AI
-2. Data, features, labels ಮತ್ತು dataset splitting
-3. Regression, classification ಮತ್ತು clustering
-4. Neural networks, loss, gradient descent ಮತ್ತು backpropagation
-5. CNN, RNN/LSTM ಮತ್ತು Transformers
-6. Tokens, embeddings ಮತ್ತು LLMs
-7. Prompting, fine-tuning ಮತ್ತು evaluation
-8. RAG ಮತ್ತು vector databases
-9. AI Agents, tools ಮತ್ತು APIs
-10. Docker, Kubernetes, CI/CD, monitoring ಮತ್ತು production AI
+2. Data, features, labels, and dataset splitting
+3. Regression, classification, and clustering
+4. Neural networks, loss, gradient descent, and backpropagation
+5. CNNs, RNN/LSTMs, and Transformers
+6. Tokens, embeddings, and LLMs
+7. Prompting, fine-tuning, and evaluation
+8. RAG and vector databases
+9. AI Agents, tools, and APIs
+10. Docker, Kubernetes, CI/CD, monitoring, and production AI
 
 ---
 
 **Channel:** ITkannadigaru  
-**Purpose:** Kannada learnersಗೆ English technical terminology ಜೊತೆಗೆ AI concepts ಅನ್ನು ಸರಳವಾಗಿ ಅರ್ಥಮಾಡಿಸುವುದು.
+**Purpose:** To make AI concepts simple and accessible while preserving the English technical terminology needed for interviews and real-world projects.
