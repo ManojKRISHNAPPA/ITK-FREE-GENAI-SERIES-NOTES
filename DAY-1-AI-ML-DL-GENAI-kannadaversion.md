@@ -1,7 +1,6 @@
 # ITkannadigaru - AI, Machine Learning, Deep Learning, and Generative AI
 
-> English student notes  
-> **Learning path:** AI -> Machine Learning -> Deep Learning -> Generative AI -> LLMs -> RAG -> AI Agents
+> **Learning path:** AI -> Machine Learnineep Learning -> Generative AI -> LLMs -> RAG -> AI Agentsg -> D
 
 ---
 
