@@ -1,0 +1,4 @@
+Kubernetes is an open-source container orchestration platform used to deploy, 
+manage, scale, and automate containerized applications. Originally developed by Google, 
+Kubernetes has become a widely used technology in modern cloud-native environments. 
+It manages containers across multiple machines called nodes and provides features such as automatic scaling, self-healing, service discovery, load balancing, and rolling updates. Kubernetes uses objects such as Pods, Deployments, Services, ConfigMaps, and Secrets to manage applications. It can run on cloud platforms such as AWS, Azure, and Google Cloud, as well as on local infrastructure. Kubernetes helps organizations build reliable, scalable, and highly available applications efficiently.

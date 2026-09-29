@@ -6,3 +6,5 @@ langchain_core
 langchain_ollama 
 streamlit 
 langchain_groq
+langchain_community
+tqdm
