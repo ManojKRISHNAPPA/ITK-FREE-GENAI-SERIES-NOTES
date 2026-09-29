@@ -8,3 +8,5 @@ streamlit
 langchain_groq
 langchain_community
 tqdm
+pypdf
+pymupdf
