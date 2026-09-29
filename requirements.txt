@@ -10,3 +10,9 @@ langchain_community
 tqdm
 pypdf
 pymupdf
+python-docx
+docx2txt
+unstructured
+openpyxl
+networkx
+msoffcrypto-tool
