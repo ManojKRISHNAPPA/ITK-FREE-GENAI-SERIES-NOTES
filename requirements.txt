@@ -16,3 +16,7 @@ unstructured
 openpyxl
 networkx
 msoffcrypto-tool
+numpy
+matplotlib
+langchain_huggingface
+sentence-transformers
