@@ -20,3 +20,5 @@ numpy
 matplotlib
 langchain_huggingface
 sentence-transformers
+chromadb
+langchain
