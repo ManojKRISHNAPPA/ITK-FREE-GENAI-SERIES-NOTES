@@ -24,3 +24,6 @@ chromadb
 langchain
 scikit-learn 
 plotly
+langchain-classic
+langchain-core
+faiss-cpu

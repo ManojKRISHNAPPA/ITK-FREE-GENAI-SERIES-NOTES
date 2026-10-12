@@ -1,0 +1,4 @@
+Python is a high-level, interpreted, 
+general-purpose programming language known for its simple syntax and readability. 
+It is widely used in software development, automation, data science, artificial intelligence, 
+machine learning, web development, and DevOps. Python provides many built-in libraries and has a large ecosystem of third-party packages. Frameworks such as FastAPI, Flask, and Django help developers build web applications and APIs. Python is also popular in automation because developers can easily write scripts for managing infrastructure, processing files, interacting with APIs, and performing repetitive tasks. Its simplicity and versatility make Python one of the most widely used programming languages in modern technology.
