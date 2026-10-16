@@ -27,3 +27,5 @@ plotly
 langchain-classic
 langchain-core
 faiss-cpu
+langchain-astradb>=0.6,<0.7
+langchain_pinecone
