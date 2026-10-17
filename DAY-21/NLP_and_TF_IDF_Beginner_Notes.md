@@ -74,7 +74,7 @@ NLP has several techniques. Each technique solves a different problem.
 | Sentiment analysis | Estimates emotional polarity | `"The movie was excellent"` → positive |
 | Transformer-based processing | Learns contextual relationships in text | BERT, GPT |
 
-**Teaching tip:** Start with tokenization, Bag of Words, and TF-IDF before moving to embeddings. Students will then understand why modern semantic search differs from traditional keyword-based methods.
+
 
 ---
 
@@ -295,13 +295,12 @@ for i, row in enumerate(matrix):
         print(f"{word}: {row[j]:.4f}")
 ```
 
-This helps students see the numerical weight assigned to each word in each document.
 
 ---
 
 ## 8. TF-IDF vs. word embeddings
 
-This is particularly important when teaching RAG.
+
 
 | Feature | TF-IDF | Dense embeddings |
 |---|---|---|
@@ -350,4 +349,3 @@ This is why modern RAG systems often use **dense retrieval, sparse retrieval, or
 9. Hybrid search
 10. Retrieval-Augmented Generation (RAG)
 
-This sequence takes students from traditional NLP to modern GenAI retrieval systems step by step.
