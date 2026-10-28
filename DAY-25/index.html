@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DAY-25 · AI Agents vs Agentic AI</title>
+<style>
+:root{--bg:#0f172a;--card:#1e293b;--text:#e2e8f0;--muted:#94a3b8;--a:#38bdf8;--b:#a78bfa;--c:#34d399;--d:#fbbf24;--border:#334155}
+@media (prefers-color-scheme:light){:root{--bg:#f8fafc;--card:#fff;--text:#0f172a;--muted:#475569;--border:#e2e8f0}}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+header{padding:48px 20px;text-align:center;background:linear-gradient(135deg,#0ea5e9,#8b5cf6);color:#fff}
+header h1{margin:0 0 8px;font-size:2.2rem}
+header p{margin:0;opacity:.9}
+header a{color:#fff;font-weight:600}
+main{max-width:980px;margin:0 auto;padding:24px 16px 60px}
+section{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:24px;margin:24px 0}
+h2{margin-top:0;color:var(--a)}
+h3{margin-bottom:6px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.box{border:1px solid var(--border);border-radius:12px;padding:16px}
+.box.agent{border-top:4px solid var(--a)}
+.box.agentic{border-top:4px solid var(--b)}
+table{width:100%;border-collapse:collapse}
+th,td{padding:10px 12px;border-bottom:1px solid var(--border);text-align:left;vertical-align:top}
+th{color:var(--a)}
+.loop{display:flex;flex-wrap:wrap;gap:12px;align-items:stretch}
+.step{flex:1 1 180px;border-radius:12px;padding:14px;color:#0f172a;font-weight:500}
+.step b{display:block;font-size:1.05rem}
+.s1{background:#7dd3fc}.s2{background:#c4b5fd}.s3{background:#6ee7b7}.s4{background:#fde68a}
+.arrow{align-self:center;font-size:1.5rem;color:var(--muted)}
+.flow{display:flex;flex-direction:column;align-items:center;gap:6px}
+.node{padding:10px 18px;border-radius:10px;border:2px solid var(--b);background:rgba(167,139,250,.12);text-align:center;min-width:240px}
+.node.h{border-color:var(--d);background:rgba(251,191,36,.12)}
+.row{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.down{color:var(--muted)}
+.tag{display:inline-block;padding:2px 10px;border-radius:999px;font-size:.8rem;background:var(--b);color:#fff}
+.tip{border-left:4px solid var(--c);padding:10px 14px;background:rgba(52,211,153,.1);border-radius:6px}
+ul{padding-left:20px}
+footer{text-align:center;color:var(--muted);padding:20px}
+</style>
+</head>
+<body>
+<header>
+  <h1>🤖 AI Agents vs Agentic AI</h1>
+  <p>GenAI Series · DAY-25 · <a href="https://www.youtube.com/watch?v=gwyHg0OHnyQ&amp;list=PLOg6j3XLQi3s">Watch on YouTube</a></p>
+</header>
+<main>
+
+<section>
+  <h2>1. The Big Idea</h2>
+  <p>An <b>LLM is the "brain"</b> of both AI Agents and Agentic AI, connected to <b>tools</b> and <b>databases</b>. The difference is scope: one focused agent versus a network of agents working toward a larger goal.</p>
+  <div class="grid">
+    <div class="box agent">
+      <h3>AI Agent</h3>
+      <ul>
+        <li>Individual software program for a <b>specific task</b></li>
+        <li>Some autonomy, no human intervention for that task</li>
+        <li>Follows <b>predefined rules</b></li>
+        <li>Single entity, focused purpose</li>
+      </ul>
+    </div>
+    <div class="box agentic">
+      <h3>Agentic AI</h3>
+      <ul>
+        <li>Broader framework for <b>complex workflows</b></li>
+        <li><b>Multiple agents</b> collaborate and decide independently</li>
+        <li>Adapts and learns from experience</li>
+        <li>Decisions based on real-time data and circumstances</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>2. Comparison</h2>
+  <table>
+    <tr><th>Aspect</th><th>AI Agent</th><th>Agentic AI</th></tr>
+    <tr><td>Scope</td><td>Single, specific task</td><td>Larger goal, complex workflow</td></tr>
+    <tr><td>Structure</td><td>One agent</td><td>Network of collaborating agents</td></tr>
+    <tr><td>Autonomy</td><td>Limited</td><td>High, makes its own decisions</td></tr>
+    <tr><td>Behavior</td><td>Predefined rules</td><td>Adaptive, learns over time</td></tr>
+    <tr><td>Examples</td><td>Support chatbot, banking bot</td><td>Smart home, health assistant</td></tr>
+  </table>
+</section>
+
+<section>
+  <h2>3. Examples</h2>
+  <div class="grid">
+    <div class="box agent"><span class="tag" style="background:var(--a)">AI Agent</span>
+      <h3>💬 Customer service chatbot</h3>
+      <p>Answers basic questions. Chatbot + retriever + database.</p></div>
+    <div class="box agent"><span class="tag" style="background:var(--a)">AI Agent</span>
+      <h3>🏦 Automated banking bot</h3>
+      <p>Balance inquiries and transactions with clearly defined processes.</p></div>
+    <div class="box agentic"><span class="tag">Agentic AI</span>
+      <h3>🏠 Smart home system</h3>
+      <p>Lights, thermostat and appliances run by multiple AI systems. Goal: <b>reduce electricity</b>.</p></div>
+    <div class="box agentic"><span class="tag">Agentic AI</span>
+      <h3>🩺 Personalized health assistant</h3>
+      <p>Analyzes medical history, real-time health data and lifestyle to recommend care. Adapts to new research and feedback.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>4. The Agentic AI Loop</h2>
+  <div class="loop">
+    <div class="step s1"><b>👁 Perception</b>Gather data from surroundings</div><div class="arrow">→</div>
+    <div class="step s2"><b>🧠 Reasoning</b>Understand what is going on</div><div class="arrow">→</div>
+    <div class="step s3"><b>⚡ Action</b>Take a specific action</div><div class="arrow">→</div>
+    <div class="step s4"><b>📈 Learning</b>Improve and adapt over time</div>
+  </div>
+  <p class="down">↻ Learning feeds back into Perception, so the loop repeats.</p>
+</section>
+
+<section>
+  <h2>5. Real Project: Agentic AI in a Software Team</h2>
+  <p><b>Traditional flow at XYZ Company:</b> Requirement gathering (Business Analyst, Product Manager) → Sprint planning (Agile) → Developer teams.</p>
+  <p><b>Agentic AI version:</b></p>
+  <div class="flow">
+    <div class="node">📋 Requirements</div><div class="down">↓</div>
+    <div class="node">🧠 LLM (planner agent)</div><div class="down">↓</div>
+    <div class="row"><div class="node">Task 1</div><div class="node">Task 2</div><div class="node">Task 3</div></div><div class="down">↓</div>
+    <div class="row"><div class="node">Dev 1 agent</div><div class="node">Dev 2 agent</div><div class="node">Dev 3 agent</div></div>
+    <div class="down">LLM + prompt engineering ↓</div>
+    <div class="node">🔍 Code Review agent <span class="down">(loops back to devs)</span></div><div class="down">↓</div>
+    <div class="node">🧪 Testing agent → raises bugs → back to coding</div><div class="down">↓</div>
+    <div class="node h">🙋 Human feedback in the loop<br><small>Human intervention improves LLM accuracy</small></div>
+  </div>
+</section>
+
+<section>
+  <h2>6. Coming Next: Blog Generation Agentic AI System</h2>
+  <p class="down"><i>Notes to be added in the next session.</i></p>
+</section>
+
+<section>
+  <h2>7. Key Takeaways</h2>
+  <div class="tip">
+    <ul>
+      <li>AI Agent = one specialist. Agentic AI = a team of specialists with a shared goal.</li>
+      <li>The LLM is the brain; tools and databases are the hands.</li>
+      <li>Agentic systems run Perception → Reasoning → Action → Learning.</li>
+      <li>Keep a human in the loop to improve accuracy.</li>
+    </ul>
+  </div>
+</section>
+
+</main>
+<footer>GenAI Series Notes · DAY-25</footer>
+</body>
+</html>
