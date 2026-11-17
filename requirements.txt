@@ -34,3 +34,5 @@ rank_bm25
 duckduckgo-search
 ddgs
 langchain-google-genai
+arxiv
+wikipedia
