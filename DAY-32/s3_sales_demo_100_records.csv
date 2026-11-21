@@ -1,0 +1,101 @@
+order_id,order_date,customer_id,product,category,region,quantity,unit_price,discount_pct,revenue,payment_method,order_status
+ORD-0001,2026-05-12,CUST-016,Laptop Pro 14,Electronics,Central,4,1250.0,15,4250.0,Credit Card,Shipped
+ORD-0002,2026-10-20,CUST-026,Mechanical Keyboard,Accessories,West,1,89.0,10,80.1,Net Banking,Shipped
+ORD-0003,2026-05-16,CUST-018,Office Chair,Furniture,South,1,310.0,20,248.0,Credit Card,Cancelled
+ORD-0004,2026-09-04,CUST-020,Noise-Canceling Headphones,Electronics,East,4,199.0,10,716.4,UPI,Delivered
+ORD-0005,2026-01-20,CUST-031,Laptop Pro 14,Electronics,Central,3,1250.0,20,3000.0,UPI,Shipped
+ORD-0006,2026-04-17,CUST-003,Wireless Mouse,Accessories,Central,4,25.0,15,85.0,UPI,Cancelled
+ORD-0007,2026-02-28,CUST-013,Standing Desk,Furniture,East,4,520.0,15,1768.0,UPI,Delivered
+ORD-0008,2026-07-24,CUST-033,Office Chair,Furniture,West,1,310.0,15,263.5,UPI,Cancelled
+ORD-0009,2026-04-22,CUST-003,USB-C Dock,Accessories,East,2,145.0,20,232.0,Debit Card,Delivered
+ORD-0010,2026-05-23,CUST-012,USB-C Dock,Accessories,South,1,145.0,15,123.25,Net Banking,Shipped
+ORD-0011,2026-09-07,CUST-023,Laptop Sleeve,Accessories,West,3,32.0,0,96.0,Credit Card,Delivered
+ORD-0012,2026-08-30,CUST-030,Noise-Canceling Headphones,Electronics,South,5,199.0,10,895.5,Debit Card,Delivered
+ORD-0013,2026-02-11,CUST-030,Mechanical Keyboard,Accessories,North,4,89.0,15,302.6,Debit Card,Delivered
+ORD-0014,2026-07-19,CUST-017,Noise-Canceling Headphones,Electronics,West,4,199.0,15,676.6,UPI,Shipped
+ORD-0015,2026-06-20,CUST-002,Office Chair,Furniture,North,3,310.0,10,837.0,Credit Card,Delivered
+ORD-0016,2026-05-22,CUST-030,USB-C Dock,Accessories,East,4,145.0,15,493.0,Credit Card,Shipped
+ORD-0017,2026-06-16,CUST-004,Office Chair,Furniture,East,4,310.0,10,1116.0,Debit Card,Delivered
+ORD-0018,2026-05-12,CUST-035,Standing Desk,Furniture,South,1,520.0,5,494.0,UPI,Delivered
+ORD-0019,2026-03-12,CUST-029,Laptop Sleeve,Accessories,North,5,32.0,0,160.0,Debit Card,Delivered
+ORD-0020,2026-07-18,CUST-005,Laptop Sleeve,Accessories,East,2,32.0,10,57.6,Net Banking,Shipped
+ORD-0021,2026-05-02,CUST-015,Laptop Sleeve,Accessories,Central,4,32.0,10,115.2,UPI,Delivered
+ORD-0022,2026-01-28,CUST-028,4K Monitor,Electronics,West,1,420.0,0,420.0,Net Banking,Delivered
+ORD-0023,2026-05-31,CUST-033,Noise-Canceling Headphones,Electronics,North,1,199.0,20,159.2,UPI,Shipped
+ORD-0024,2026-04-25,CUST-009,USB-C Dock,Accessories,South,3,145.0,0,435.0,Net Banking,Shipped
+ORD-0025,2026-01-27,CUST-012,Standing Desk,Furniture,North,2,520.0,20,832.0,UPI,Cancelled
+ORD-0026,2026-07-29,CUST-017,4K Monitor,Electronics,South,5,420.0,10,1890.0,Debit Card,Cancelled
+ORD-0027,2026-08-04,CUST-028,Mechanical Keyboard,Accessories,East,4,89.0,5,338.2,Net Banking,Delivered
+ORD-0028,2026-09-28,CUST-005,Laptop Pro 14,Electronics,East,1,1250.0,10,1125.0,Net Banking,Delivered
+ORD-0029,2026-06-23,CUST-020,Noise-Canceling Headphones,Electronics,North,2,199.0,20,318.4,UPI,Cancelled
+ORD-0030,2026-08-04,CUST-024,Laptop Pro 14,Electronics,East,4,1250.0,10,4500.0,UPI,Shipped
+ORD-0031,2026-07-14,CUST-023,Wireless Mouse,Accessories,North,3,25.0,0,75.0,Debit Card,Delivered
+ORD-0032,2026-05-29,CUST-007,Noise-Canceling Headphones,Electronics,South,1,199.0,0,199.0,Net Banking,Delivered
+ORD-0033,2026-06-26,CUST-028,Standing Desk,Furniture,North,1,520.0,0,520.0,UPI,Cancelled
+ORD-0034,2026-04-15,CUST-022,Laptop Sleeve,Accessories,East,3,32.0,10,86.4,UPI,Delivered
+ORD-0035,2026-05-25,CUST-017,Wireless Mouse,Accessories,West,5,25.0,10,112.5,Credit Card,Delivered
+ORD-0036,2026-05-28,CUST-016,Mechanical Keyboard,Accessories,Central,3,89.0,15,226.95,Credit Card,Delivered
+ORD-0037,2026-03-22,CUST-034,Office Chair,Furniture,South,3,310.0,20,744.0,Net Banking,Delivered
+ORD-0038,2026-01-07,CUST-013,Webcam HD,Electronics,Central,3,78.0,5,222.3,Credit Card,Cancelled
+ORD-0039,2026-06-16,CUST-012,Office Chair,Furniture,North,1,310.0,5,294.5,Net Banking,Shipped
+ORD-0040,2026-07-17,CUST-026,Wireless Mouse,Accessories,West,2,25.0,5,47.5,Debit Card,Shipped
+ORD-0041,2026-10-02,CUST-035,4K Monitor,Electronics,South,1,420.0,15,357.0,Credit Card,Delivered
+ORD-0042,2026-04-22,CUST-011,Wireless Mouse,Accessories,Central,3,25.0,10,67.5,UPI,Cancelled
+ORD-0043,2026-10-13,CUST-023,Laptop Sleeve,Accessories,South,2,32.0,5,60.8,Net Banking,Delivered
+ORD-0044,2026-10-08,CUST-007,Laptop Sleeve,Accessories,North,2,32.0,20,51.2,Net Banking,Delivered
+ORD-0045,2026-10-25,CUST-006,Mechanical Keyboard,Accessories,Central,3,89.0,20,213.6,Credit Card,Shipped
+ORD-0046,2026-09-26,CUST-005,Webcam HD,Electronics,East,5,78.0,5,370.5,UPI,Delivered
+ORD-0047,2026-07-18,CUST-015,Laptop Pro 14,Electronics,South,4,1250.0,5,4750.0,Debit Card,Delivered
+ORD-0048,2026-03-20,CUST-001,Noise-Canceling Headphones,Electronics,Central,4,199.0,5,756.2,Debit Card,Delivered
+ORD-0049,2026-09-07,CUST-032,Laptop Pro 14,Electronics,North,1,1250.0,0,1250.0,Net Banking,Delivered
+ORD-0050,2026-09-20,CUST-002,4K Monitor,Electronics,North,3,420.0,15,1071.0,UPI,Delivered
+ORD-0051,2026-10-19,CUST-018,Laptop Sleeve,Accessories,East,4,32.0,5,121.6,UPI,Delivered
+ORD-0052,2026-03-10,CUST-010,Laptop Sleeve,Accessories,North,1,32.0,0,32.0,Credit Card,Shipped
+ORD-0053,2026-06-01,CUST-033,Laptop Sleeve,Accessories,West,1,32.0,5,30.4,Debit Card,Delivered
+ORD-0054,2026-08-30,CUST-001,USB-C Dock,Accessories,West,1,145.0,20,116.0,Credit Card,Shipped
+ORD-0055,2026-02-07,CUST-020,Webcam HD,Electronics,Central,1,78.0,10,70.2,Credit Card,Delivered
+ORD-0056,2026-05-27,CUST-018,Laptop Sleeve,Accessories,West,2,32.0,0,64.0,UPI,Cancelled
+ORD-0057,2026-10-05,CUST-018,Office Chair,Furniture,North,2,310.0,20,496.0,Net Banking,Delivered
+ORD-0058,2026-02-01,CUST-026,Wireless Mouse,Accessories,North,4,25.0,20,80.0,Net Banking,Delivered
+ORD-0059,2026-06-28,CUST-007,Laptop Pro 14,Electronics,Central,5,1250.0,0,6250.0,Net Banking,Cancelled
+ORD-0060,2026-08-24,CUST-030,USB-C Dock,Accessories,North,3,145.0,15,369.75,Net Banking,Delivered
+ORD-0061,2026-08-28,CUST-017,Mechanical Keyboard,Accessories,South,5,89.0,5,422.75,UPI,Delivered
+ORD-0062,2026-09-18,CUST-027,Noise-Canceling Headphones,Electronics,West,4,199.0,20,636.8,UPI,Delivered
+ORD-0063,2026-05-08,CUST-004,Wireless Mouse,Accessories,West,2,25.0,20,40.0,Debit Card,Cancelled
+ORD-0064,2026-03-16,CUST-010,Mechanical Keyboard,Accessories,South,3,89.0,10,240.3,Debit Card,Shipped
+ORD-0065,2026-02-01,CUST-031,Webcam HD,Electronics,North,5,78.0,20,312.0,UPI,Delivered
+ORD-0066,2026-09-05,CUST-012,4K Monitor,Electronics,South,1,420.0,0,420.0,Debit Card,Delivered
+ORD-0067,2026-02-19,CUST-006,Laptop Sleeve,Accessories,South,5,32.0,10,144.0,Net Banking,Delivered
+ORD-0068,2026-01-07,CUST-025,USB-C Dock,Accessories,North,1,145.0,10,130.5,Credit Card,Delivered
+ORD-0069,2026-06-27,CUST-019,Webcam HD,Electronics,West,1,78.0,10,70.2,Debit Card,Delivered
+ORD-0070,2026-06-01,CUST-026,Webcam HD,Electronics,Central,2,78.0,20,124.8,Debit Card,Cancelled
+ORD-0071,2026-02-24,CUST-032,Office Chair,Furniture,South,1,310.0,10,279.0,Credit Card,Delivered
+ORD-0072,2026-05-05,CUST-010,Standing Desk,Furniture,North,3,520.0,20,1248.0,Credit Card,Delivered
+ORD-0073,2026-01-31,CUST-004,Laptop Sleeve,Accessories,Central,3,32.0,20,76.8,Credit Card,Delivered
+ORD-0074,2026-01-30,CUST-030,USB-C Dock,Accessories,Central,5,145.0,15,616.25,Debit Card,Cancelled
+ORD-0075,2026-08-29,CUST-021,Mechanical Keyboard,Accessories,West,5,89.0,5,422.75,Net Banking,Shipped
+ORD-0076,2026-02-10,CUST-029,Standing Desk,Furniture,East,4,520.0,15,1768.0,UPI,Delivered
+ORD-0077,2026-05-19,CUST-028,Laptop Sleeve,Accessories,South,5,32.0,20,128.0,Net Banking,Shipped
+ORD-0078,2026-02-11,CUST-016,Mechanical Keyboard,Accessories,East,2,89.0,0,178.0,Credit Card,Delivered
+ORD-0079,2026-04-21,CUST-018,Standing Desk,Furniture,South,2,520.0,5,988.0,Net Banking,Delivered
+ORD-0080,2026-07-25,CUST-009,USB-C Dock,Accessories,South,2,145.0,0,290.0,Debit Card,Cancelled
+ORD-0081,2026-05-25,CUST-027,Standing Desk,Furniture,South,5,520.0,20,2080.0,UPI,Delivered
+ORD-0082,2026-07-15,CUST-008,Laptop Sleeve,Accessories,Central,5,32.0,10,144.0,Net Banking,Delivered
+ORD-0083,2026-03-28,CUST-007,Noise-Canceling Headphones,Electronics,West,4,199.0,0,796.0,Credit Card,Delivered
+ORD-0084,2026-09-16,CUST-033,Office Chair,Furniture,North,4,310.0,10,1116.0,Debit Card,Shipped
+ORD-0085,2026-08-06,CUST-021,Standing Desk,Furniture,North,1,520.0,15,442.0,Net Banking,Cancelled
+ORD-0086,2026-10-15,CUST-006,Noise-Canceling Headphones,Electronics,Central,1,199.0,20,159.2,UPI,Delivered
+ORD-0087,2026-08-27,CUST-033,USB-C Dock,Accessories,Central,4,145.0,20,464.0,Credit Card,Delivered
+ORD-0088,2026-01-29,CUST-019,Noise-Canceling Headphones,Electronics,West,3,199.0,0,597.0,Credit Card,Delivered
+ORD-0089,2026-06-21,CUST-017,Wireless Mouse,Accessories,East,3,25.0,0,75.0,Net Banking,Delivered
+ORD-0090,2026-08-28,CUST-019,Noise-Canceling Headphones,Electronics,East,4,199.0,20,636.8,Credit Card,Delivered
+ORD-0091,2026-02-05,CUST-028,Wireless Mouse,Accessories,North,5,25.0,20,100.0,Net Banking,Delivered
+ORD-0092,2026-05-06,CUST-033,USB-C Dock,Accessories,West,4,145.0,15,493.0,Credit Card,Shipped
+ORD-0093,2026-09-27,CUST-029,Noise-Canceling Headphones,Electronics,West,2,199.0,15,338.3,Net Banking,Delivered
+ORD-0094,2026-04-05,CUST-011,Noise-Canceling Headphones,Electronics,North,2,199.0,10,358.2,Debit Card,Delivered
+ORD-0095,2026-05-12,CUST-026,Laptop Pro 14,Electronics,South,5,1250.0,10,5625.0,Credit Card,Shipped
+ORD-0096,2026-10-08,CUST-013,Wireless Mouse,Accessories,West,3,25.0,20,60.0,Net Banking,Delivered
+ORD-0097,2026-10-23,CUST-001,Wireless Mouse,Accessories,West,2,25.0,15,42.5,Debit Card,Cancelled
+ORD-0098,2026-09-13,CUST-031,USB-C Dock,Accessories,West,1,145.0,5,137.75,Credit Card,Delivered
+ORD-0099,2026-07-25,CUST-020,USB-C Dock,Accessories,North,3,145.0,0,435.0,Credit Card,Delivered
+ORD-0100,2026-03-30,CUST-034,Noise-Canceling Headphones,Electronics,East,5,199.0,10,895.5,UPI,Delivered

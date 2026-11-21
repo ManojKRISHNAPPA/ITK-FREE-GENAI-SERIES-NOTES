@@ -36,3 +36,6 @@ ddgs
 langchain-google-genai
 arxiv
 wikipedia
+boto3
+duckdb
+tabulate
